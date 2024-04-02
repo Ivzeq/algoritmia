@@ -9,16 +9,17 @@ Repositorio general para almacenar los ejercicios de los diferentes tps
 - Ejercicio 7: Una persona invierte su capital en un banco y desea saber cuánto dinero ganará
 en un mes, teniendo en cuenta que el banco paga 2% mensual. ¿Cuánto ganará
 en seis meses si deja su dinero invertido?
-Ejercicio 8: Leer una medida en metros e imprimir esta medida expresada en centímetros,
+
+- Ejercicio 8: Leer una medida en metros e imprimir esta medida expresada en centímetros,
 pulgadas, pies y yardas. Los factores de conversión son:
 
-· 1 pie = 12 pulgadas
+- - 1 pie = 12 pulgadas
 
-· 1 yarda = 3 pies
+- - 1 yarda = 3 pies
 
-· 1 pulgada = 2,54 cm.
+- - 1 pulgada = 2,54 cm.
 
-· 1 metro = 100 cm.
+- - 1 metro = 100 cm.
 
 - Ejercicio 9: Una inmobiliaria paga a sus vendedores un salario de $250000, más una comisión
 de $50000 por cada venta realizada, más el 5% del valor de las ventas.
@@ -74,12 +75,9 @@ iguales a 7.
 a 4.
 · Se debe recuperar cuando al menos una de las dos notas es menor a 4.
 
-- Ejercicio 6: Una editorial determina el precio de un libro según la cantidad de páginas que
-contiene. El costo básico del libro es de $5000, más $32 por página con encuadernación
-rústica. Si el número de páginas supera las 300 la encuadernación
-debe ser en tela, lo que incrementa el costo en $1200. Además, si el número de
-páginas sobrepasa las 600 se hace necesario un procedimiento especial de encuadernación
-que incrementa el costo en otros $3360. Desarrollar un programa
+- Ejercicio 6: Una editorial determina el precio de un libro según la cantidad de páginas que contiene. El costo básico del libro es de $5000, más $32 por página con encuadernación
+rústica. Si el número de páginas supera las 300 la encuadernación debe ser en tela, lo que incrementa el costo en $1200. Además, si el número de
+páginas sobrepasa las 600 se hace necesario un procedimiento especial de encuadernación que incrementa el costo en otros $3360. Desarrollar un programa
 que calcule el costo de un libro dado el número de páginas.
 
 - Ejercicio 7: Un fletero requiere un programa que calcule el precio de sus viajes a partir de la
@@ -89,11 +87,7 @@ alcanza este mínimo.
 · Si recorre entre 0 y 10 km: $400 por km
 · Si recorre 10 km o más: $200 por km
 
-- Ejercicio 8: Leer un número correspondiente a un año e imprimir un mensaje indicando si es
-bisiesto o no. Un año es bisiesto cuando es divisible por 4. Sin embargo, aquellos
-años que sean divisibles por 4 y también por 100 no son bisiestos, a menos que
-también sean divisibles por 400. Por ejemplo, 1900 no fue bisiesto pero sí el
-2000.
+- Ejercicio 8: Leer un número correspondiente a un año e imprimir un mensaje indicando si es bisiesto o no. Un año es bisiesto cuando es divisible por 4. Sin embargo, aquellos años que sean divisibles por 4 y también por 100 no son bisiestos, a menos que también sean divisibles por 400. Por ejemplo, 1900 no fue bisiesto pero sí el 2000.
 
 - Ejercicio 9: Leer tres números correspondientes al día, mes y año de una fecha e imprimir
 un mensaje indicando si la fecha es válida o no.
