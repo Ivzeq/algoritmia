@@ -69,11 +69,9 @@ obtenido en cada caso y si la misma fue aprobada o no.
 - Ejercicio 5: Ingresar las notas de los dos parciales de un alumno e indicar si promocionó,
 aprobó o si debe recuperar. Informar un error si el valor de alguna nota no está
 entre 0 y 10.
-· Se promociona cuando las notas de ambos parciales son mayores o
-iguales a 7.
-· Se aprueba cuando las notas de ambos parciales son mayores o iguales
-a 4.
-· Se debe recuperar cuando al menos una de las dos notas es menor a 4.
+    · Se promociona cuando las notas de ambos parciales son mayores o iguales a 7.
+    · Se aprueba cuando las notas de ambos parciales son mayores o iguales a 4.
+    · Se debe recuperar cuando al menos una de las dos notas es menor a 4.
 
 - Ejercicio 6: Una editorial determina el precio de un libro según la cantidad de páginas que contiene. El costo básico del libro es de $5000, más $32 por página con encuadernación
 rústica. Si el número de páginas supera las 300 la encuadernación debe ser en tela, lo que incrementa el costo en $1200. Además, si el número de
@@ -82,10 +80,9 @@ que calcule el costo de un libro dado el número de páginas.
 
 - Ejercicio 7: Un fletero requiere un programa que calcule el precio de sus viajes a partir de la
 cantidad de kilómetros que recorre. Para eso cuenta con la siguiente tarifa:
-· Viaje mínimo $2700. Sólo se cobra cuando el importe por kilómetro no
-alcanza este mínimo.
-· Si recorre entre 0 y 10 km: $400 por km
-· Si recorre 10 km o más: $200 por km
+    · Viaje mínimo $2700. Sólo se cobra cuando el importe por kilómetro no alcanza este mínimo.
+    · Si recorre entre 0 y 10 km: $400 por km
+    · Si recorre 10 km o más: $200 por km
 
 - Ejercicio 8: Leer un número correspondiente a un año e imprimir un mensaje indicando si es bisiesto o no. Un año es bisiesto cuando es divisible por 4. Sin embargo, aquellos años que sean divisibles por 4 y también por 100 no son bisiestos, a menos que también sean divisibles por 400. Por ejemplo, 1900 no fue bisiesto pero sí el 2000.
 
