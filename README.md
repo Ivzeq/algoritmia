@@ -100,7 +100,7 @@ También se le realizan los siguientes descuentos: Jubilación: 11%, Obra Social
     estado civil (1 si es soltero o 2 si es casado). Se debe informar: (reemplazar los
     9 por los valores que correspondan)
 
-![image info](./img/table.png)
+    ![image info](./img/table.png)
 
 ### TP4
 
