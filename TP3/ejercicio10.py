@@ -18,10 +18,10 @@ sueldoNeto = sueldoBruto
 
 if isSoltero == 'S':
     extraAntiguedad = antiguedad * porcentajeSoltero
-    sueldoNeto = sueldoNeto + (sueldoNeto * extraAntiguedad /100)
-    sueldoNeto = sueldoNeto - (sueldoNeto * porcentajeJubilacion /100 + sueldoNeto * porcentajeObraSocial /100 + sueldoNeto * porcentajeSindicato /100)
+    sueldoNeto += (sueldoNeto * extraAntiguedad /100)
+    sueldoNeto -= (sueldoNeto * porcentajeJubilacion /100 + sueldoNeto * porcentajeObraSocial /100 + sueldoNeto * porcentajeSindicato /100)
 elif isSoltero == 'C':
     extraAntiguedad = antiguedad * porcentajeCasado
-    sueldoNeto = sueldoNeto + (sueldoNeto * extraAntiguedad /100)
-    sueldoNeto = sueldoNeto - (sueldoNeto * porcentajeJubilacion /100 + sueldoNeto * porcentajeObraSocial /100 + sueldoNeto * porcentajeSindicato /100)
+    sueldoNeto += (sueldoNeto * extraAntiguedad /100)
+    sueldoNeto -= (sueldoNeto * porcentajeJubilacion /100 + sueldoNeto * porcentajeObraSocial /100 + sueldoNeto * porcentajeSindicato /100)
 print('El sueldo neto final es de $', sueldoNeto)

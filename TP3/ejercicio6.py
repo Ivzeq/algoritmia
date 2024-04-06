@@ -15,8 +15,8 @@ precioFinal = precioBase
 precioFinal = precioBase + cantPaginas * precioPorPagina
 
 if cantPaginas > 300 :
-    precioFinal = precioFinal + costoEncuadernacionTela
+    precioFinal += costoEncuadernacionTela
     if cantPaginas > 600:
-        precioFinal = precioFinal + costoMayorA600
+        precioFinal += costoMayorA600
 
 print('El precio final para un libro de', cantPaginas, 'paginas es $', precioFinal)
