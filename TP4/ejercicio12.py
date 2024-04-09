@@ -6,16 +6,21 @@ imprima los N primeros términos de esta sucesión, como así también la suma d
 los mismos.
 '''
 
-nTerminoFibonacci = int(input('Ingrese la cantidad de terminos de Fibonacci que desea agregar'))
-valorFibonacci = 0
+nTerminoFibonacci = int(input('Ingrese la cantidad de terminos de Fibonacci que desea visualizar\n'))
+primerTermino = 0
 segundoTermino = 1
-terminoActual = 1
+terminoActual = 2
+sumaFibonacci = 0
+terminosFinales = str(primerTermino)
 
-terminosFinales = str(valorFibonacci) + ' + ' + str(segundoTermino)
+if nTerminoFibonacci >= 2:
+    while terminoActual <= nTerminoFibonacci:
+        terminosFinales += ' + ' + str(segundoTermino)
+        sumaFibonacci += segundoTermino
+        nuevoTermino = primerTermino + segundoTermino
+        primerTermino = segundoTermino
+        segundoTermino = nuevoTermino
+        terminoActual += 1
+        
 
-while terminoActual <= nTerminoFibonacci:
-    valorFibonacci += segundoTermino
-    segundoTermino = valorFibonacci
-    terminosFinales += ' + ' + str(segundoTermino)
-
-print(terminosFinales)
+print(terminosFinales, '=', sumaFibonacci)

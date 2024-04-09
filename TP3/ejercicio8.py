@@ -10,13 +10,7 @@ year = int(input('Ingresar año a evaluar\n'))
 mensajeBisiesto = 'El año ' + str(year) + ' es bisiesto'
 mensajeNoBisiesto = 'El año ' + str(year) + ' no es bisiesto'
 
-if year%4 == 0:
-    if year %100 == 0:
-        if year % 400 == 0:
-            print(mensajeBisiesto)
-        else:
-            print(mensajeNoBisiesto)     
-    else:
-        print(mensajeBisiesto)
+if year%4 == 0 and year % 100 != 0 or year % 400 ==0:
+    print(mensajeBisiesto)
 else:
     print(mensajeNoBisiesto)
