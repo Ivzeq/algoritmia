@@ -5,3 +5,17 @@ Por lo tanto, Fib=0, 1, 1, 2, 3, 5, 8, 13, 21.... Realizar un programa que lea N
 imprima los N primeros términos de esta sucesión, como así también la suma de
 los mismos.
 '''
+
+nTerminoFibonacci = int(input('Ingrese la cantidad de terminos de Fibonacci que desea agregar'))
+valorFibonacci = 0
+segundoTermino = 1
+terminoActual = 1
+
+terminosFinales = str(valorFibonacci) + ' + ' + str(segundoTermino)
+
+while terminoActual <= nTerminoFibonacci:
+    valorFibonacci += segundoTermino
+    segundoTermino = valorFibonacci
+    terminosFinales += ' + ' + str(segundoTermino)
+
+print(terminosFinales)
