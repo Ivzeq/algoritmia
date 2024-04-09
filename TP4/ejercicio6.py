@@ -4,10 +4,11 @@ algoritmo para que el usuario pueda decidir la tabla de multiplicar a mostrar?
 '''
 
 factor = 1
+tablaElegida = int(input('Ingrese el numero de la tabla que quiere ver\n'))
 
 resultado = 0
 
 while (factor <= 12):
-    resultado = 4 * factor
-    print('4 x', factor, '=', resultado)
+    resultado = tablaElegida * factor
+    print(tablaElegida, 'x', factor, '=', resultado)
     factor += 1
