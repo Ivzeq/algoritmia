@@ -7,21 +7,31 @@ validar que la nota ingresada sea entre 1 y 10. Terminada la carga de datos, inf
 · Porcentaje de alumnos que están aplazados (tienen 1 en el examen).
 '''
 
-legajo = input('Ingrese el legajo del alumno')
-notaFinal = int(input('Ingrese la nota del alumno'))
+legajo = int(input('Ingrese el legajo del alumno\n'))
 nAprobados = 0
 nDesaprobados = 0
 nAplazados = 0
+nAlumnos = 0
 
 while legajo != -1:
-    notaFinal = int(input('Ingrese la nota del alumno'))
+    notaFinal = int(input('Ingrese la nota del alumno\n'))
     while not (notaFinal <=10 and notaFinal >=1):
-        notaFinal = int(input('Ingrese una nota valida del 1 al 10'))
-    if notaFinal <=4:
+        notaFinal = int(input('Ingrese una nota valida del 1 al 10\n'))
+    
+    if notaFinal >=4:
         print('El alumno con legajo', legajo, 'aprobo el Final')  
+        nAprobados +=1
     elif notaFinal <4 and notaFinal>1:
         print('El alumno con legajo', legajo, 'no aprobo el Final')
+        nDesaprobados +=1
     else:
         print('El alumno con legajo', legajo, 'aplazo la materia')
-    
-    legajo = input('Ingrese el legajo del alumno')
+        nAplazados +=1
+    nAlumnos += 1
+    legajo = int(input('Ingrese el legajo del alumno\n'))
+
+porcentajeAplazados = int(nAplazados * 100 /nAlumnos)
+
+print('La cantidad de alumnos aprobados es', nAprobados)
+print('La cantidad de alumnos desaprobados es', nDesaprobados)
+print('El porcentaje de alumnos aplazados es', porcentajeAplazados, '%')
