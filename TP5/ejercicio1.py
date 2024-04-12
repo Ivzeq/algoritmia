@@ -5,7 +5,7 @@ válida una edad entre 0 y 100).
 '''
 
 nMenores18 = 0
-nmayores18 = 0
+nMayores18 = 0
 promedioEdad = 0
 nPersonasIngresadas = 0
 nTotalEdades = 0
@@ -20,7 +20,7 @@ while edadIngresada != -1:
     if edadIngresada < 18:
         nMenores18 += 1
     else:
-        nmayores18 += 1
+        nMayores18 += 1
     nPersonasIngresadas += 1
     nTotalEdades += edadIngresada  
     edadIngresada = int(input('Ingresar una edad entre 0 y 100 años\n'))  
@@ -29,5 +29,5 @@ if nTotalEdades >0:
     promedioEdad = nTotalEdades//nPersonasIngresadas
 
 print('La cantidad de menores de 18 años es', nMenores18)
-print('La cantidad de mayores de 18 años es', nmayores18)
+print('La cantidad de mayores de 18 años es', nMayores18)
 print('El promedio de edad en el grupo de personas es', promedioEdad)
