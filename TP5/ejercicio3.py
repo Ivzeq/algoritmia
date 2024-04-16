@@ -13,3 +13,4 @@ El finde carga se determina ingresando -1 como cantidad solicitada. Al finalizar
 · Cantidad de ventas en las que se aplicó un 10% de descuento.
 · Cantidad de ventas en las que SOLO se aplicó el precio base, es decir que no se le realizaron descuentos.
 '''
+
