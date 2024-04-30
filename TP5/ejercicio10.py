@@ -10,3 +10,33 @@ descuento.
 porcentaje representan sobre el total de funciones.
 '''
 
+nEspectadores = 0
+nEspectadoresTotal = 0
+tieneDescuento = ''
+recaudacionTotal = 0
+nEspectadoresDescuento = 0
+porcentajeEspectadoresDescuento = 0
+
+
+nEspectadores = int(input('Ingrese la cantidad de espectadores en la funcion\n'))
+
+while (nEspectadores != 0):
+    while(nEspectadores < 0):
+        nEspectadores = int(input('Cantidad negativa no permitida. Ingrese la cantidad de espectadores en la funcion\n'))
+    
+    tieneDescuento = input('Ingrese Si en caso de que la funcion tenga descuento y No en el que no lo tenga\n')
+
+    if(tieneDescuento == 'Si'):
+        recaudacionTotal += nEspectadores * 3500
+        nEspectadoresDescuento += nEspectadores
+
+    elif (tieneDescuento == 'No'):
+        recaudacionTotal += nEspectadores * 5000
+
+    nEspectadoresTotal += nEspectadores
+    nEspectadores = int(input('Ingrese la cantidad de espectadores en la funcion\n'))
+
+porcentajeEspectadoresDescuento = nEspectadoresDescuento * 100 / nEspectadoresTotal
+
+print('La reacudacion total es de', recaudacionTotal)
+print('La cantidad de espectadores con descuento son', recaudacionTotal, ' que representan un porcentaje del', porcentajeEspectadoresDescuento)
