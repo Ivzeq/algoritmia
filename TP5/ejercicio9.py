@@ -8,3 +8,22 @@ Ejemplo:
 · Si se ingresa -5, se debe pedir otro número.
 '''
 
+numeroN = 0
+
+numeroEvaluado = 1
+acumuladorImpares = 0
+stringFinal = ''
+
+numeroN = int(input('Ingrese un numero positivo\n'))
+
+while(numeroN < 0):
+    numeroN = int(input('Numero ingresado incorrecto. Ingrese un numero positivo\n'))
+
+while (numeroEvaluado <= numeroN):
+    if (numeroEvaluado % 2 != 0):
+        stringFinal += str(numeroEvaluado) + ' '
+        acumuladorImpares += numeroEvaluado
+    numeroEvaluado += 1
+
+print(stringFinal)
+print('La suma de los impares es:', acumuladorImpares)
