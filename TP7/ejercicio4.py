@@ -4,22 +4,30 @@ lista. La función recibe como parámetros la lista y el valor a buscar, y devue
 un número entero.
 '''
 def rangoLista(a,b):
-    listaRango = []
+    listaValores = []
     inputValue = int(input('Ingrese un numero \n'))
 
-    if (a>b):
-        while (inputValue ):
-            listaRango.append(i)
-    elif(b>a):
-        for i in range(a,b,-1):
-            listaRango.append(i)
-    else:
-        listaRango.append(a)
-    return listaRango
+    while(inputValue!= -1):
+        if (a<b):
+            for i in range(a,b+1,1):
+                if(i==inputValue):
+                    listaValores.append(inputValue)
+        elif(b<a):
+            for i in range(a+1,b,-1):
+                if(i==inputValue):
+                    listaValores.append(inputValue)
+        else:
+            if(a==inputValue):
+                listaValores.append(inputValue)
+
+        inputValue = int(input('Ingrese un numero \n'))
+        
+    return listaValores
 
 def contarValor (lista, valor):
+    print(lista)
     contadorIgualdad = 0
-    for i in range(len(lista)):
+    for i in range(0,len(lista)):
         if (lista[i]== valor):
             contadorIgualdad += 1
     return contadorIgualdad
@@ -27,8 +35,7 @@ def contarValor (lista, valor):
 
 a = int(input('Ingrese un numero \n'))
 b = int(input('Ingrese un numero \n'))
-valorEvaluado = int(input('Ingrese valor a evaluar \n'))
 
 listaParaEvaluacion = rangoLista(a,b)
-nValoresEnLista = contarValor(listaParaEvaluacion,valorEvaluado)
+nValoresEnLista = contarValor(listaParaEvaluacion,int(input('Ingrese valor a evaluar \n')))
 print(nValoresEnLista)
