@@ -1,7 +1,6 @@
 '''
-Escribir una función para contar cuántas veces aparece un valor dentro de la
-lista. La función recibe como parámetros la lista y el valor a buscar, y devuelve
-un número entero.
+Escribir una función para devolver una lista con todas las posiciones que ocupa un valor pasado como parámetro, utilizando búsqueda secuencial en una lista
+desordenada. La función debe devolver una lista vacía si el elemento no se encuentra en la lista original.
 '''
 def rangoLista(a,b):
     listaValores = []
@@ -22,18 +21,18 @@ def rangoLista(a,b):
         
     return listaValores
 
-def contarValor (lista, valor):
+def get_posiciones_listas (lista, valor):
     print(lista)
-    contadorIgualdad = 0
+    posicionesValor = []
     for i in range(0,len(lista)):
         if (lista[i]== valor):
-            contadorIgualdad += 1
-    return contadorIgualdad
+            posicionesValor.append(i)
+    return posicionesValor
 
 
-a = int(input('Ingrese un numero \n'))
-b = int(input('Ingrese un numero \n'))
+a = int(input('Ingrese un numero para limite 1 \n'))
+b = int(input('Ingrese un numero para limite 2\n'))
 
 listaParaEvaluacion = rangoLista(a,b)
-nValoresEnLista = contarValor(listaParaEvaluacion,int(input('Ingrese valor a evaluar \n')))
-print(nValoresEnLista)
+posiciones_lista = get_posiciones_listas(listaParaEvaluacion,int(input('Ingrese valor a evaluar \n')))
+print(posiciones_lista)
