@@ -9,27 +9,13 @@ Entre 4 y 6: Aprobado
 Entre 7 y 10: Promocionado
 '''
 
-def CombinarListas (lista1, lista2):
+def EvaluarAprobados (lista1):
     finalList = []
-    if (len(lista1) == len(lista2)):
-        for i in range(0, len(lista1)):
-            finalList.append(lista1[i])
-            finalList.append(lista2[i])
-    elif(len(lista1) > len(lista2)):
-        for i in range(0, len(lista2)):
-            finalList.append(lista1[i])
-            finalList.append(lista2[i])
-        for i in range(len(lista2), len(lista1)):
-            finalList.append(lista1[i])
-    else:
-        for i in range(0, len(lista1)):
-            finalList.append(lista1[i])
-            finalList.append(lista2[i])
-        for i in range(len(lista1), len(lista2)):
-            finalList.append(lista2[i])
+    for i in range (0,len(lista1)):
+        if(lista1[i] == 0):
+            return 'Ausente'
     return finalList
 
-listaEvaluar1 = ["Hola","nombre", "Juan"]
-listaEvaluar2 = ["mi","es", "Perez", "y", "tengo", "25", "años"]
+listaEvaluar1 = [0,2,3,10,3,4,2,7,4,8,6,2,1,3,5,3,4]
 
-print(CombinarListas(listaEvaluar1,listaEvaluar2))
+print(EvaluarAprobados(listaEvaluar1))
