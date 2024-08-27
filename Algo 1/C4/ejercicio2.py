@@ -19,7 +19,13 @@ def isElementoInListaRepetido(lista):
     return elementoRepetido 
 
 def getElementosUnicos (lista):
-    return [elemento for elemento in lista if lista.count(elemento) == 1]
+    listaElementosunicos = []
+    
+    for elemento in lista:
+        if elemento not in listaElementosunicos:
+            listaElementosunicos.append(elemento)
+    
+    return listaElementosunicos
     
 lista1 = generarLista1to100()
 
