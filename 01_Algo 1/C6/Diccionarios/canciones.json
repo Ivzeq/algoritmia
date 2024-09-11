@@ -1,0 +1,45 @@
+[
+    {
+      "artist": "The Beatles",
+      "title": "Let It Be",
+      "duration": "4:03",
+      "size": "9 MB"
+    },
+    {
+      "artist": "Taylor Swift",
+      "title": "Shake It Off",
+      "duration": "3:39",
+      "size": "7.5 MB"
+    },
+    {
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "duration": "3:53",
+      "size": "8.1 MB"
+    },
+    {
+      "artist": "Drake",
+      "title": "God's Plan",
+      "duration": "3:19",
+      "size": "6.9 MB"
+    },
+    {
+      "artist": "Billie Eilish",
+      "title": "Bad Guy",
+      "duration": "3:14",
+      "size": "6.5 MB"
+    },
+    {
+      "artist": "Adele",
+      "title": "Hello",
+      "duration": "4:55",
+      "size": "11.2 MB"
+    },
+    {
+      "artist": "BTS",
+      "title": "Dynamite",
+      "duration": "3:19",
+      "size": "7.0 MB"
+    }
+  ]
+  
