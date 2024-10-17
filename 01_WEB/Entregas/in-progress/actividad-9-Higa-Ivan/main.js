@@ -66,8 +66,10 @@ Utiliza un bucle for para generar la tabla.
 const ejercicio4 = () => {
     factor = Number(prompt('Ingrese un numero para ver su tabla del 1 al 10'))
 
-    for (let i = 1; i <= 10; i++) {
-        console.log(factor,'x',i,'=', factor*i)
+    if (factor != 0) {
+        for (let i = 1; i <= 10; i++) {
+            console.log(factor,'x',i,'=', factor*i)
+        }   
     }
 } 
 
