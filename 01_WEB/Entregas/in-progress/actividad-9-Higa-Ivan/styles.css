@@ -1,0 +1,19 @@
+body{
+    background-color: #1e2238;
+    color: white;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button{
+    font-size: 24px;
+    color: white;
+    background-color: #2e3248;
+    border-radius: 16px;
+    padding: 8px;
+}
