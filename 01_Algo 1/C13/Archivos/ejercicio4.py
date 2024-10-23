@@ -5,7 +5,7 @@ El formato a ser almacenado será cada dato separado por el carácter punto y co
 Tenga en cuenta que cada vez que se ejecuta el programa, se debe incrementar el contenido del archivo (agregar al final).
 '''
 
-def generatePersonasFile ():
+def generatePersonasFile (route):
     nombre = input('Ingrese un nombre o fin para terminar:')
 
     while nombre.lower() != 'fin':
@@ -14,7 +14,7 @@ def generatePersonasFile ():
             edad = input('Ingrese una edad:')
             estatura = input('Ingrese una estatura:')
 
-            file = open('personas.txt', 'a', encoding="UTF-8")
+            file = open(route, 'a', encoding="UTF-8")
 
             print(nombre + ';' + apellido + ';' + edad + ';' + estatura + ';', file=file)
         except Exception as e:
@@ -24,9 +24,9 @@ def generatePersonasFile ():
             nombre = input('Ingrese un nombre o fin para terminar:')
 
 
-def printFile ():
+def printFile (route):
     try:
-        file = open('personas.txt', 'r', encoding='UTF-8')
+        file = open(route, 'r', encoding='UTF-8')
         content = file.read()
         renglones = content.split('\n')
 
@@ -38,5 +38,5 @@ def printFile ():
     finally:
         file.close()
 
-generatePersonasFile()    
-printFile()
+generatePersonasFile('personas.txt')    
+printFile('personas.txt')
